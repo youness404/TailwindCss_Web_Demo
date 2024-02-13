@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <img
+            src="/images/logo-light.png"
+            alt="tailwindcss Logo"
+            width="200px"
+          />
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="py-2 text-slate-900 hover:text-orange-500"
+            >Portfolio</a
+          >
+          <a href="#" class="py-2 text-slate-900 hover:text-orange-500"
+            >About</a
+          >
+          <a href="#" class="py-2 text-slate-900 hover:text-orange-500"
+            >Contact</a
+          >
+          <a href="#" class="py-2 text-slate-900 hover:text-orange-500"
+            >Social</a
+          >
+          <a
+            href="#"
+            class="px-6 py-2 rounded-full text-white bg-orange-500 hover:bg-slate-900"
+            >Call Me</a
+          >
+        </div>
+        <button id="mobile-btn" class="md:hidden">
+          <i class="ri-menu-line text-2xl" id="burger-menu"></i>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          id="mobile-menu"
+          class="absolute flex hidden flex-col space-y-4 font-bold drop-shadow-lg bg-gray-50 items-center py-6 left-6 right-6 border border-gray-300"
+        >
+          <a href="#" class="py-2 hover:text-orange-500">About</a>
+          <a href="#" class="py-2 hover:text-orange-500">Contact</a>
+          <a href="#" class="py-2 hover:text-orange-500">Social</a>
+          <a href="#" class="py-2 hover:text-orange-500">Portfolio</a>
+          <a
+            href="#"
+            class="px-6 py-2 hover:text-orange-500 rounded-full text-white bg-orange-500 hover:bg-slate-900"
+            >Call Me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div
+        class="container mx-auto px-6 space-x-6 flex flex-col-reverse items-center text-center md:flex-row md:text-left"
+      >
+        <div
+          class="md:w-1/2 flex flex-col space-y-5 justify-center text-slate-900 py-8"
+        >
+          <h1 class="font-bold text-3xl md:text-5xl">
+            Rapidly build modern websites without ever leaving your HTML.
+          </h1>
+          <p>
+            A utility-first CSS framework packed with classes like flex, pt-4,
+            text-center and rotate-90 that can be composed to build any design,
+            directly in your markup.
+          </p>
+          <a
+            href="#"
+            class="px-6 py-2 self-center md:self-start rounded-full text-white bg-orange-500 hover:bg-slate-900 hover:text-orange-500 font-bold"
+            >Get Started</a
+          >
+        </div>
+        <div class="w-1/2">
+          <img
+            src="/images/undraw_learning_sketching_nd4f.svg"
+            alt="hero section image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="author">
+      <div class="container px-5 mx-auto my-32 text-center">
+        <h2 class="font-bold text-3xl md:text-4xl">
+          "Best practices" dont't actually work.
+        </h2>
+        <p class="mt-8 max-w-5xl mx-auto">
+          I've written a few thousand words on why traditional “semantic class
+          names” are the reason CSS is hard to maintain, but the truth is you're
+          never going to believe me until you actually try it. If you can
+          suppress the urge to retch long enough to give it a chance, I really
+          think you'll wonder how you ever worked with CSS any other way.
+        </p>
+
+        <div
+          class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0"
+        >
+          <div
+            class="flex items-center flex-col p-6 space-y-2 border drop-shadow-lg border-slate-200 md:w-1/3 rounded-lg bg-slate-100 hover:bg-slate-50 transition-all"
+          >
+            <img
+              src="/images/adam.jpg"
+              alt="Adam Sandler"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
+            <p class="leading-5 text-sm text-slate-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              blanditiis sequi voluptate a aut assumenda, ratione minima. Ad,
+              eum dolorum.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center flex-col p-6 space-y-2 border drop-shadow-lg border-slate-200 md:w-1/3 rounded-lg bg-slate-100 hover:bg-slate-50 transition-all"
+          >
+            <img
+              src="/images/madeline.jpg"
+              alt="madeline"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Madeline Bauer</h5>
+            <p class="leading-5 text-sm text-slate-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              blanditiis sequi voluptate a aut assumenda, ratione minima. Ad,
+              eum dolorum.
+            </p>
+          </div>
+
+          <div
+            class="flex items-center flex-col p-6 space-y-2 border drop-shadow-lg border-slate-200 md:w-1/3 rounded-lg bg-slate-100 hover:bg-slate-50 transition-all"
+          >
+            <img
+              src="/images/marcel.jpg"
+              alt="Marcel"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Marcel Khalifa</h5>
+            <p class="leading-5 text-sm text-slate-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              blanditiis sequi voluptate a aut assumenda, ratione minima. Ad,
+              eum dolorum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row text-white px-5 py-10 justify-between space-y-8 md:space-y-0"
+      >
+        <div
+          class="flex flex-col items-center justify-between space-y-12 md:space-y-8 md:items-start"
+        >
+          <div class="text-center mt-6 md:mt-0">
+            Copyright &copy; 2023, All rights reserved
+          </div>
+          <div>
+            <img
+              src="/images/logo-dark.png"
+              alt="tailwindcss Logo"
+              class="h-8"
+            />
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="#"
+              ><i class="ri-facebook-box-fill text-3xl hover:text-blue-500"></i
+            ></a>
+            <a href="#"
+              ><i class="ri-instagram-fill text-3xl hover:text-pink-700"></i
+            ></a>
+            <a href="#"
+              ><i class="ri-youtube-fill text-3xl hover:text-red-600"></i
+            ></a>
+            <a href="#"
+              ><i class="ri-linkedin-fill text-3xl hover:text-blue-500"></i
+            ></a>
+            <a href="#"
+              ><i class="ri-twitter-fill text-3xl hover:text-blue-500"></i
+            ></a>
+          </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-slate-300">Home</a>
+            <a href="#" class="hover:text-slate-300">About</a>
+            <a href="#" class="hover:text-slate-300">Contact</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-slate-300">Imprint</a>
+            <a href="#" class="hover:text-slate-300">Privacy</a>
+            <a href="#" class="hover:text-slate-300">Credits</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <form action="#">
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                placeholder="Subscribe to Newsletter"
+                class="w-72 flex-1 text-slate-900 rounded-full px-5 py-2 focus:outline-none"
+              />
+              <button
+                class="bg-orange-500 rounded-full px-6 py-3 font-bold hover:bg-slate-700 hover:text-orange-500"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+
+          <div class="hidden md:block">
+            Copyright &copy; 2023, All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/public/js/script.js"></script>
+  </body>
+</html>
